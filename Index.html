@@ -1,86 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVENTURRRA - El Juego del Reciclaje</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVENTURRRA — Gestión Inteligente de Residuos</title>
+  <meta name="description" content="AventuRRRa: página profesional para universitarios — 3R, calculadora de impacto, simulador y referentes que impulsan el cambio." />
+
+  <!-- Tipografía profesional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
-    <header>
-        <a href="#top" class="logo">
-            AVENTU<span class="r">R</span><span class="r">R</span><span class="r">R</span>A
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#education">Aprende</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#game-section">Juega</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-    <main>
-        <section id="education">
-            <h1 class="section-title">¡Una Aventu<span class="r">rrr</span>a por el Planeta!</h1>
-            <div class="content-block">
-                <h2>El Desafío de la Basura</h2>
-                <p>Nuestra ciudad enfrenta un desafío ambiental creciente: la gestión de residuos. La contaminación afecta infraestructuras y ecosistemas. Sin embargo, tenemos la herramienta más efectiva para mitigar este impacto: la implementación rigurosa de las **3R**.</p>
-            </div>
-            
-            <h2 class="section-subtitle">Pilares de la Sostenibilidad</h2>
-            <div class="rrr-container">
-                <div class="rrr-card reduce-card">
-                    <h3>Reducir</h3>
-                    <p>La acción prioritaria es la minimización del consumo. Implica elegir productos con menos empaque, preferir artículos reutilizables y rechazar lo innecesario. Es la clave para disminuir la huella de carbono.</p>
-                </div>
-                <div class="rrr-card reuse-card">
-                    <h3>Reutilizar</h3>
-                    <p>Extender la vida útil de los materiales antes de desecharlos. Un enfoque creativo puede transformar envases y objetos en herramientas o decoración, evitando que se conviertan prematuramente en residuos.</p>
-                </div>
-                <div class="rrr-card recycle-card">
-                    <h3>Reciclar</h3>
-                    <p>El proceso de transformar residuos separados (papel, plástico, vidrio, metal) en nuevos productos. Este circuito de economía circular ahorra recursos naturales y energía, cerrando el ciclo de los materiales.</p>
-                </div>
-            </div>
-        </section>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">♻︎</span>
+        <strong>AVENTURRRA</strong>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#overview">Resumen</a></li>
+          <li><a href="#rrr">Guía 3R</a></li>
+          <li><a href="#calc">Calculadora</a></li>
+          <li><a href="#sim">Simulador</a></li>
+          <li><a href="#personas">Personas</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="videos">
-            <h2 class="section-title">Información y Recursos</h2>
-            <div class="video-container">
-                <div class="video-placeholder">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uaI3PLmAJyM?si=ZckdCTCxOPlKmFt7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-               <div class="video-placeholder">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rRCZzrMjiY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <main id="main" class="container">
+    <!-- HERO / RESUMEN EJECUTIVO -->
+    <section id="overview" class="section hero">
+      <div class="hero-copy">
+        <h1>Gestión de residuos con enfoque empresarial</h1>
+        <p class="lead">Una mirada práctica y cuantificable a <strong>Reducir, Reutilizar y Reciclar</strong> pensada para estudiantes de contaduría: costos evitados, riesgos mitigados y métricas claras.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#calc">Abrir calculadora de impacto</a>
+          <a class="btn ghost" href="#rrr">Ver guía 3R</a>
+        </div>
+      </div>
+      <div class="kpis" role="region" aria-label="Indicadores clave">
+        <div class="kpi"><span id="kpi-reciclaje">35%</span><label>Tasa de reciclaje objetivo</label></div>
+        <div class="kpi"><span id="kpi-costo">$0</span><label>Ahorro potencial / mes</label></div>
+        <div class="kpi"><span id="kpi-co2">0 kg</span><label>CO₂e evitado (estimado)</label></div>
+      </div>
+    </section>
 
-                </div>
-                <div class="video-placeholder">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cvakvfXj0KE?si=ls_Rz7eqwJAPlqxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
+    <!-- GUÍA 3R (ENFOQUE PROFESIONAL) -->
+    <section id="rrr" class="section">
+      <h2>Guía 3R con enfoque de costos</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>Reducir</h3>
+          <ul class="pro-list">
+            <li>Compra estratégica: menos empaque, mayor rendimiento por unidad.</li>
+            <li>Política de impresión y consumo responsable en oficinas.</li>
+            <li>Contratos con proveedores que incentiven retornables.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Reutilizar</h3>
+          <ul class="pro-list">
+            <li>Reuso de cajas y embalajes internos.</li>
+            <li>Inventario de activos reutilizables (carpetas, folders, contenedores).</li>
+            <li>Programas de “segunda vida” para mobiliario.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Reciclar</h3>
+          <ul class="pro-list">
+            <li>Separación en origen con señalética clara.</li>
+            <li>Convenios con recicladores formales y evidencia de trazabilidad.</li>
+            <li>Tablero mensual con métricas (kg, % y costos evitados).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-        <section id="game-section">
-            <h2 class="section-title">Evalúa tus Conocimientos</h2>
-            <div id="game-container">
-                <div id="start-screen">
-                    <h2>Reto de Clasificación Sostenible</h2>
-                    <p>Demuestra tu dominio en la correcta clasificación de residuos para contribuir a una gestión ambiental eficiente.</p>
-                    <button id="start-button">Iniciar Desafío</button>
-                </div>
-                <div id="game-screen" class="hidden">
-                    <h2>Clasifica la Basura</h2>
-                    <p>¡El juego comenzará aquí pronto!</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <script src="script.js"></script>
+    <!-- CALCULADORA DE IMPACTO -->
+    <section id="calc" class="section">
+      <h2>Calculadora rápida de impacto</h2>
+      <p class="muted">Estimación simple para dimensionar beneficios. Ajusta los parámetros según tu contexto.</p>
+      <form id="impact-form" class="calc-grid" aria-describedby="calc-help">
+        <div class="field">
+          <label for="kg">Residuos generados por semana (kg)</label>
+          <input type="number" id="kg" min="0" step="0.1" value="50" required />
+        </div>
+        <div class="field">
+          <label for="rec">Porcentaje reciclado (%)</label>
+          <input type="number" id="rec" min="0" max="100" step="1" value="30" required />
+        </div>
+        <div class="field">
+          <label for="costo">Costo de disposición por kg (MXN)</label>
+          <input type="number" id="costo" min="0" step="0.01" value="2.50" required />
+        </div>
+        <div class="field">
+          <label for="factor">Factor CO₂e evitado por kg reciclado</label>
+          <input type="number" id="factor" min="0" step="0.01" value="0.6" />
+          <small class="muted">Parámetro ajustable (kg CO₂e/kg). Usar fines comparativos.</small>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn primary">Calcular</button>
+          <button type="button" id="reset-calc" class="btn ghost">Reiniciar</button>
+        </div>
+      </form>
+
+      <div class="results" role="region" aria-live="polite">
+        <div class="result"><label>Ahorro mensual estimado</label><strong id="res-ahorro">$0</strong></div>
+        <div class="result"><label>CO₂e evitado al mes</label><strong id="res-co2">0 kg</strong></div>
+        <div class="result"><label>Reciclaje mensual (kg)</label><strong id="res-kg-rec">0 kg</strong></div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR DE CLASIFICACIÓN (PRO) -->
+    <section id="sim" class="section">
+      <h2>Simulador de separación en origen</h2>
+      <p class="muted">Arrastra el material al contenedor correcto o usa teclas <kbd>1–5</kbd>. 60s por ronda.</p>
+
+      <div class="sim-wrap">
+        <div class="hud">
+          <div class="tag">Tiempo: <strong id="time">60</strong>s</div>
+          <div class="tag">Puntaje: <strong id="score">0</strong></div>
+          <div class="tag">Racha: <strong id="streak">0</strong></div>
+          <button id="start" class="btn small" type="button">Iniciar</button>
+        </div>
+
+        <div class="play">
+          <div id="item" class="item" tabindex="0" draggable="true" aria-grabbed="false"></div>
+          <div class="bins">
+            <div class="bin" data-bin="papel" tabindex="0"><span class="b-icon" aria-hidden="true">📄</span><span>Papel</span><span class="kbd"><kbd>1</kbd></span></div>
+            <div class="bin" data-bin="plastico" tabindex="0"><span class="b-icon" aria-hidden="true">🧴</span><span>Plástico</span><span class="kbd"><kbd>2</kbd></span></div>
+            <div class="bin" data-bin="vidrio" tabindex="0"><span class="b-icon" aria-hidden="true">🍾</span><span>Vidrio</span><span class="kbd"><kbd>3</kbd></span></div>
+            <div class="bin" data-bin="organico" tabindex="0"><span class="b-icon" aria-hidden="true">🍎</span><span>Orgánico</span><span class="kbd"><kbd>4</kbd></span></div>
+            <div class="bin" data-bin="metal" tabindex="0"><span class="b-icon" aria-hidden="true">🥫</span><span>Metal</span><span class="kbd"><kbd>5</kbd></span></div>
+          </div>
+          <div id="feedback" class="feedback" aria-live="assertive"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAS QUE IMPULSAN EL CAMBIO -->
+    <section id="personas" class="section">
+      <h2>Personas que impulsan el cambio</h2>
+      <p class="muted">Explora referentes globales en activismo, innovación y economía circular. Busca por nombre, país o enfoque.</p>
+
+      <div class="toolbar">
+        <input id="search-person" type="search" placeholder="Buscar (nombre, país, enfoque)..." aria-label="Buscar persona" />
+        <select id="filter-enfoque" aria-label="Filtrar por enfoque">
+          <option value="">Todos los enfoques</option>
+          <option value="Activismo">Activismo</option>
+          <option value="Innovación">Innovación</option>
+          <option value="Economía circular">Economía circular</option>
+          <option value="Conservación">Conservación</option>
+          <option value="Política pública">Política pública</option>
+          <option value="Comunicación científica">Comunicación científica</option>
+        </select>
+      </div>
+
+      <div id="people-list" class="grid three"></div>
+      <p id="people-empty" class="muted hidden">No se encontraron resultados con esos criterios.</p>
+    </section>
+
+    <!-- RECURSOS (VIDEOS) -->
+    <section id="recursos" class="section">
+      <h2>Recursos</h2>
+      <div class="grid three">
+        <article class="card media">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/uaI3PLmAJyM" title="¿Qué es el reciclaje?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Introducción al reciclaje</h3>
+        </article>
+        <article class="card media">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/rRCZzrMjiY0" title="Separación de residuos" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Separación en origen</h3>
+        </article>
+        <article class="card media">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/cvakvfXj0KE" title="Economía circular" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Economía circular</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>AVENTURRRA · Proyecto académico — Desarrollo Humano · Hecho con criterio profesional</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
