@@ -1,0 +1,379 @@
+/* --- ESTILO FINAL: TEMA "ELEGANCIA MINIMALISTA Y ORGÁNICA" --- */
+
+/* --- Paleta de Colores ---
+Verde Oliva Oscuro (Principal): #427c42 (más sobrio)
+Verde Menta Suave (Acentos): #81c181
+Gris Antracita (Texto Principal): #343a40
+Gris Claro Orgánico (Fondo/Bordes): #f8f9fa
+Blanco Puro: #ffffff
+Beige Suave (Fondo de secciones): #fefefe
+*/
+
+/* --- Estilos Generales --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fcfcfc; /* Fondo casi blanco, muy sutil */
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: #343a40; /* Gris Antracita para el texto principal */
+    box-sizing: border-box;
+    line-height: 1.6; /* Mejora la legibilidad general */
+}
+
+p {
+    font-size: 1.05rem; /* Tamaño base del párrafo */
+    line-height: 1.7; 
+    margin-bottom: 1.2rem;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px; /* Más ancho para un layout más abierto */
+    margin: 0 auto;
+    padding-top: 110px; /* Espacio para el header fijo */
+}
+
+section {
+    margin-bottom: 100px; /* Más espacio entre secciones */
+}
+
+.section-title {
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 900;
+    font-size: 3rem; /* Tamaño elegante */
+    color: #427c42; /* Verde Oliva Oscuro */
+    text-align: center;
+    margin-bottom: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Espaciado sutil */
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #5a6a70; /* Gris azulado más suave */
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* --- Encabezado y Logo --- */
+header {
+    width: 100%;
+    background-color: #427c42; /* Verde Oliva Oscuro */
+    padding: 15px 60px; /* Más padding para un look premium */
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15); /* Sombra más suave y difuminada */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem; /* Tamaño más prominente */
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.8px; 
+}
+
+.logo .r {
+    color: #aed581; /* Verde más claro para el acento */
+    font-size: 1em; 
+    vertical-align: 0;
+}
+
+/* --- Navegación --- */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+}
+
+nav a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75); /* Blanco semitransparente */
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px; /* Más redondeado */
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo suave al hover */
+    transform: translateY(-2px); /* Ligera elevación */
+}
+
+
+/* --- Contenedores de Contenido --- */
+#game-container {
+    background: #ffffff;
+    padding: 40px 60px; 
+    border-radius: 20px; 
+    margin-bottom: 80px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+/* ESTILOS ESPECÍFICOS PARA EL BLOQUE DE DESCRIPCIÓN (MODIFICADO) */
+.content-block {
+    /* Color de fondo muy suave para destacarse del fondo general del body */
+    background-color: #fcfcf0; 
+    /* Borde sutil del color de acento */
+    border: 2px solid #e0e0e0;
+    padding: 40px 60px;
+    border-radius: 20px;
+    margin-bottom: 80px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.content-block p {
+    /* Aumento del tamaño de letra solo para los párrafos dentro de este bloque */
+    font-size: 1.25rem; 
+    /* Interlineado más generoso para mejor lectura */
+    line-height: 1.8; 
+    /* Sombra de texto muy suave para darle un toque más pulido */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 0; /* Quitar el margen inferior para limpiar el bloque */
+}
+
+.content-block h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800; /* Más negrita */
+    color: #343a40; /* Gris Antracita */
+    font-size: 2.1rem; /* Título un poco más grande */
+    margin-top: 0;
+    margin-bottom: 25px; /* Más espacio debajo del título */
+    text-align: center;
+    /* Subrayado sutil y ancho */
+    border-bottom: 3px solid #f0f0f0; 
+    padding-bottom: 15px;
+}
+/* FIN DE ESTILOS ESPECÍFICOS */
+
+
+/* --- Tarjetas de las 3R --- */
+.rrr-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+    flex-wrap: wrap;
+}
+
+.rrr-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 35px; /* Más padding interno */
+    border-radius: 20px; /* Bordes muy redondeados */
+    color: #343a40; 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.07); 
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s;
+}
+
+.rrr-card h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.9rem; /* Más prominente */
+    margin-top: 0;
+    color: #427c42; /* Verde Oliva Oscuro */
+    margin-bottom: 12px;
+}
+
+/* Efecto hover: borde de color y ligera elevación */
+.reduce-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(229, 115, 115, 0.3); /* Sombra más intensa y colorida */
+    border-color: #e57373; /* Rojo más suave */
+}
+.reuse-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 183, 77, 0.3); /* Naranja más suave */
+    border-color: #ffb74d; 
+}
+.recycle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(129, 199, 132, 0.3); /* Verde claro más suave */
+    border-color: #81c784; 
+}
+
+/* Colores para el texto principal de las 3R al hacer hover */
+.reduce-card:hover h3 { color: #e57373; }
+.reuse-card:hover h3 { color: #ffb74d; }
+.recycle-card:hover h3 { color: #81c784; }
+
+
+/* --- Sección de Videos --- */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.video-placeholder {
+    width: 100%; 
+    max-width: 360px; /* Videos un poco más grandes */
+    height: 200px; /* Altura ajustada */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s;
+}
+
+.video-placeholder:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: #427c42; /* Borde verde al hover */
+}
+
+.video-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- Sección del Juego --- */
+#game-container {
+    text-align: center;
+    border-top: 8px solid #aed581; /* Borde superior con acento verde más claro */
+}
+
+#start-screen h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem; 
+    color: #427c42; /* Verde Oliva Oscuro */
+    margin-top: 0;
+}
+
+#start-screen p {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+#start-button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background: #81c181; /* Verde Menta Suave */
+    color: white;
+    border: none;
+    padding: 15px 35px; 
+    font-size: 1.3rem;
+    border-radius: 35px; /* Muy redondeado */
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 #5f905f; /* Sombra más oscura para el efecto 3D */
+    transition: all 0.15s ease-in-out;
+    letter-spacing: 0.8px;
+}
+
+#start-button:hover {
+    background: #9ccc9c; /* Verde ligeramente más claro al hover */
+    box-shadow: 0 7px 0 #5f905f;
+    transform: translateY(-3px);
+}
+
+#start-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #5f905f;
+}
+
+.hidden { display: none; }
+
+#game-screen h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #427c42;
+}
+
+/* --- RESPONSIVE / Media Queries (Para móviles) --- */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column; 
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 8px 15px;
+    }
+
+    main {
+        padding-top: 120px; 
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .rrr-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .rrr-card {
+        min-width: unset;
+        padding: 25px;
+    }
+    
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-placeholder {
+        max-width: 100%;
+        height: 180px; 
+    }
+
+    .content-block, #game-container {
+        padding: 30px 20px;
+        margin-bottom: 50px;
+    }
+
+    /* Ajustes específicos para el párrafo en móviles */
+    .content-block p {
+        font-size: 1.15rem; 
+    }
+
+    #start-button {
+        padding: 12px 28px;
+        font-size: 1.2rem;
+    }
+}
